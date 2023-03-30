@@ -1,0 +1,7 @@
+{
+    "api":{
+        "name":"Social Profile REST API",
+        "prefix":"social-profile-rest-api",
+        "validateJWTToken":false
+    }
+}
