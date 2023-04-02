@@ -1,7 +1,7 @@
 "use strict";
 const express = require("express");
 const router = express.Router();
-const authenUtility = require("./utility/authentication.utility");
+const authenUtility = require("mr-utility").authenticationUtility;
 const controller = require("./controller");
 
 router.get(`/`, (req, res)=> res.send('Welcome to Social Profile REST API home page'));

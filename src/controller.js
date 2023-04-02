@@ -1,5 +1,5 @@
 "use strict";
-const controllerUtility = require("./utility/controller.utility");
+const controllerUtility = require("mr-utility").controllerUtility;
 const service = require("./service");
 
 const getProfile = controllerUtility.asyncMiddleware(async (req, res)=>{
