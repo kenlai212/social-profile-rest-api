@@ -3,5 +3,13 @@
         "name":"Social Profile REST API",
         "prefix":"social-profile-rest-api",
         "validateJWTToken":false
+    },
+    "db":{
+        "mysql":{
+          "host":"localhost",
+          "userId":"root",
+          "password":"password",
+          "socialProfileDb":"socialProfile"
+        }
     }
 }

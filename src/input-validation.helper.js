@@ -2,12 +2,19 @@
 const Joi = require("joi");
 const inputValidationUtility = require("mr-utility").inputValidationUtility;
 
-function validateGetProfileInput(input){
+function validateReadProfileInput(input){
     inputValidationUtility.validateInput(Joi.object({
         token: Joi.string().required()
 	}), input);
 }
 
+function validateCreateProfileInput(input){
+    inputValidationUtility.validateInput(Joi.object({
+        personId: Joi.string().required()
+    }), input);
+}
+
 module.exports = {
-    validateGetProfileInput
+    validateReadProfileInput,
+    validateCreateProfileInput
 }
