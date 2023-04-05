@@ -9,7 +9,7 @@
           "host":"localhost",
           "userId":"root",
           "password":"password",
-          "socialProfileDb":"socialProfile"
+          "db":"socialProfileRestApi"
         }
     }
 }

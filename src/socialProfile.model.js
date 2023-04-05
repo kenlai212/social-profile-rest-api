@@ -1,7 +1,6 @@
 "use strict";
-const utility = require("./utility");
 const {DataTypes} = require('sequelize');
-const sequelize = utility.getSequelize("socialProfile");
+const sequelize = require('mr-utility').mysqlUtility.getSequelize();
 
 const SocialProfile = sequelize.define('socialProfile', {
     personId:{

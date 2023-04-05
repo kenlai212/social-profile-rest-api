@@ -23,8 +23,8 @@ async function createProfile(input){
     socialProfile.personId = input.personId;
     socialProfile.createdAt = new Date();
     socialProfile.updatedAt = new Date();
-    socialProfile.englishName = "Johnny Robins";
-    socialProfile.avatarImageURL = "test.gif";
+    socialProfile.englishName = input.englishName;
+    socialProfile.avatarImageURL = input.avatarImageURL;
 
     await socialProfile.save()
         .then(record => {

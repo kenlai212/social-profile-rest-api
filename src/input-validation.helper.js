@@ -10,7 +10,9 @@ function validateReadProfileInput(input){
 
 function validateCreateProfileInput(input){
     inputValidationUtility.validateInput(Joi.object({
-        personId: Joi.string().required()
+        personId: Joi.string().required(),
+        englishName: Joi.string().required(),
+        avatarImageURL: Joi.string()
     }), input);
 }
 
